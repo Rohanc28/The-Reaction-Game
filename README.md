@@ -30,3 +30,9 @@ grey = (160,160,160)
 ```
 ## Contribution:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.  
+
+### Screenshots:
+![image](https://user-images.githubusercontent.com/81807980/128636107-cdfa0499-6e4b-4ab8-8895-99481bb9607e.png)
+![image](https://user-images.githubusercontent.com/81807980/128636184-52435add-ca1c-440e-b807-f35107fb191d.png)
+![image](https://user-images.githubusercontent.com/81807980/128636243-a575bc93-2169-4fe3-98b6-7b0b0326db56.png)
+
