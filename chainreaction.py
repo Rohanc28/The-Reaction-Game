@@ -1,4 +1,4 @@
-#By IDEVRUTAHC
+#By Idevrutahc@gmail.com
 #-- --#
 import pygame
 import sys
