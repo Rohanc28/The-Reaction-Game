@@ -1,16 +1,18 @@
+#By Idevrutahc@gmail.com
+#-- --#
 import pygame
 import sys
 from math import *
 
-# Initialization of Pygame
 pygame.init()
 
+#-- Keep grid in square dimensions --#
 width = 400
 height = 400
 display = pygame.display.set_mode((width, height))
 clock = pygame.time.Clock()
 
-# Colors
+#--RGB value to colors --#
 background = (21, 25, 25)
 border = (208, 211, 212)
 red = (231, 30, 30)
@@ -18,11 +20,15 @@ white = (246, 246, 247)
 violet = (170, 24, 232)
 yellow = (252, 210, 42)
 green = (27, 239, 69)
+
+
+#--Customize player-color here  --1,2,3,4 --#
 playerColor = [red, green, violet, yellow]
 
-font = pygame.font.SysFont("Times New Roman", 30)
+font = pygame.font.SysFont("Calibri", 33)
 
 blocks = 40
+
 noPlayers = 4
 
 pygame.display.set_caption("Chain Reaction %d Player" % noPlayers)
@@ -84,7 +90,7 @@ def initializeGrid():
         for j in range(rows):
             grid[i][j].addNeighbors(i, j)
 
-# Draw the Grid in Pygame Window   
+# Draw grid   
 def drawGrid(currentIndex):
     r = 0
     c = 0
@@ -94,7 +100,8 @@ def drawGrid(currentIndex):
         pygame.draw.line(display, players[currentIndex], (c, 0), (c, height))
         pygame.draw.line(display, players[currentIndex], (0, r), (width, r))
 
-# Draw the Present Situation of Grid
+
+# Update grid / current grid view
 def showPresentGrid(vibrate = 1):
     r = -blocks
     c = -blocks
@@ -132,7 +139,7 @@ def addAtom(i, j, color):
     if grid[i][j].noAtoms >= len(grid[i][j].neighbors):
         overFlow(grid[i][j], color)
     
-# Split the Atom when it Increases the "LIMIT"
+# Split the Atom when reaches the critical mass
 def overFlow(cell, color):
     showPresentGrid()
     cell.noAtoms = 0
@@ -222,9 +229,6 @@ def gameLoop():
                 
         
         display.fill(background)
-        # Vibrate the Atoms in their Cells
-        
-        
         drawGrid(currentPlayer)
         showPresentGrid(vibrate)
         
