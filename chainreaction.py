@@ -11,14 +11,13 @@ display = pygame.display.set_mode((width, height))
 clock = pygame.time.Clock()
 
 # Colors
-background = (21, 67, 96)
+background = (21, 25, 25)
 border = (208, 211, 212)
-red = (231, 76, 60)
-white = (244, 246, 247)
-violet = (136, 78, 160)
-yellow = (244, 208, 63)
-green = (88, 214, 141)
-
+red = (231, 30, 30)
+white = (246, 246, 247)
+violet = (170, 24, 232)
+yellow = (252, 210, 42)
+green = (27, 239, 69)
 playerColor = [red, green, violet, yellow]
 
 font = pygame.font.SysFont("Times New Roman", 30)
