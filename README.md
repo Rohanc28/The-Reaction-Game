@@ -1,6 +1,8 @@
 # The-Chain-Game
 The Atom Chain reaction game using PyGame - Python, Inspired and based on the popular game Chain Reaction on Play Store.
 
+## Repl [Link](https://replit.com/@RohanChaturvedi/LavishProductiveMenus#main.py) 
+
 ## Acknowledgements:
 Inspired and based on the popular game Chain Reaction on Play Store.
 
